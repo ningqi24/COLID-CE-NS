@@ -1,8 +1,7 @@
 SWEEP-office/COLID-OS--Community-Edition:
-  - source: ./
-    target_path: NS/
+  - source: './' 
+    dest: 'NS/' 
     exclude:
-      - .github/
-      - .git/
+      - '.github/'
+      - '.git/'
     delete_orphaned: true
-    
