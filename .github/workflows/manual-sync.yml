@@ -1,22 +1,23 @@
 name: Manual Sync to Community Edition
 
 on:
-  workflow_dispatch:          # 仅允许手动触发
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source repo (main branch)
+      - name: Checkout source repo (main)
         uses: actions/checkout@v4
         with:
-          ref: main            # 明确使用 main 分支
-          fetch-depth: 0       # 完整历史，便于增量同步
+          ref: main
+          fetch-depth: 0
 
       - name: Sync to target repo
         uses: step-security/repo-file-sync-action@v1
         with:
-          GH_PAT: ${{ secrets.GH_PAT }}   # 使用仓库 Secret，不要硬编码
-          auto_commit: true                # 直接提交，不创建 PR
-          commit_message: "Manual sync from COLID-CE-NS (main)"
-          # 同步规则定义在 .github/sync.yml 中
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SKIP_PR: true                # 直接提交
+          COMMIT_PREFIX: "[Auto Sync] "
+          COMMIT_BODY: "Sync from COLID-CE-NS (main)"
+          # CONFIG_PATH 默认 .github/sync.yml
