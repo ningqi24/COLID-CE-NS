@@ -1,7 +1,8 @@
-SWEEP-office/COLID-OS--Community-Edition:
-  - source: './' 
-    dest: 'NS/' 
-    exclude:
-      - '.github/'
-      - '.git/'
-    delete_orphaned: true
+# .github/sync.yml
+SWEEP-office/COLID-OS--Community-Edition:   # 1️⃣ 顶层键：目标仓库
+  - source: ./                              # 2️⃣ 源路径：当前仓库根目录
+    dest: NS/                               # 3️⃣ 目标路径：目标仓库的 NS/ 文件夹
+    exclude:                                # 4️⃣ 排除项：不同步这些文件夹
+      - .github/
+      - .git/
+    deleteOrphaned: true                    # 5️⃣ 删除孤儿文件：保持目标文件夹与源完全一致
