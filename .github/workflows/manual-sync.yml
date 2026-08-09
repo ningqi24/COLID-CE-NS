@@ -7,17 +7,33 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source repo (main)
+      - name: Checkout source (main)
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          path: source
 
-      - name: Sync to target repo
-        uses: step-security/repo-file-sync-action@v1
+      - name: Checkout target repo
+        uses: actions/checkout@v4
         with:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          SKIP_PR: true                # 直接提交
-          COMMIT_PREFIX: "[Auto Sync] "
-          COMMIT_BODY: "Sync from COLID-CE-NS (main)"
-          # CONFIG_PATH 默认 .github/sync.yml
+          repository: SWEEP-office/COLID-OS--Community-Edition
+          token: ${{ secrets.GH_PAT }}
+          path: target
+
+      - name: Sync files using rsync
+        run: |
+          # 确保目标 NS 文件夹存在
+          mkdir -p target/NS/
+          # 使用 rsync 进行同步
+          # -a: 归档模式，保持文件属性
+          # -v: 显示详细信息
+          # --delete: 删除目标中源没有的文件（实现完全镜像）
+          # --exclude: 排除不需要的文件夹
+          rsync -av --delete --exclude='.github' --exclude='.git' source/ target/NS/
+          cd target
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          # 仅在有变更时提交
+          git diff --staged --quiet || git commit -m "Manual sync from COLID-CE-NS (main) - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
