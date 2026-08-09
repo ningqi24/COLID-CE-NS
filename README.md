@@ -1,10 +1,9 @@
-All the COLID CE using the "CC-BY-4.0" open source protocol !!!  
-# COLID CE NS 使用协议
+# NS 使用协议
 
 **版本：1.0**  
 **生效日期：2026年8月7日**  
 
-感谢您选择使用 **COLID CE NS**（以下简称“本作品”）。本作品是基于 **COLID OS** 的 UI 与部分逻辑，使用 **TurboWarp** 图形化编程制作的二次创作版本。在使用本作品前，请您仔细阅读并同意本协议的全部条款。若您不同意任何条款，请勿安装或使用本作品。
+感谢您选择使用 **NS**（以下简称“本作品”）。本作品是基于 **COLID OS** 的 UI 与部分逻辑，使用 **TurboWarp** 图形化编程制作的二次创作版本。在使用本作品前，请您仔细阅读并同意本协议的全部条款。若您不同意任何条款，请勿安装或使用本作品。
 
 ---
 
@@ -81,6 +80,6 @@ All the COLID CE using the "CC-BY-4.0" open source protocol !!! 
 ---
 
 **请您在使用前再次确认已阅读并理解上述所有条款。**  
-**COLID CE 社区感谢您的支持，愿您使用愉快！**  
+**NS 社区感谢您的支持，愿您使用愉快！**  
 
-—— COLID CE 社区 & ningqi
+—— NS 作者 ningqi & COLID Studio
