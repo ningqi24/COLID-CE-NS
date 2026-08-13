@@ -1,11 +1,11 @@
 [
- {
-  "name": "he",
-  "author": "ningqi",
-  "original_author": "孤行的3044",
-  "version": "v1.1",
-  "description": "COLID OS自带的帮助手册，在NS版本中为用户提供使用帮助",
-  "ps": "NS特制版，针对NS进行了优化和调整",
-  "dates": "2026-08-10"
- }
+  {
+    "name": "he",
+    "author": "ningqi",
+    "original_author": "孤行的3044",
+    "version": "v1.1",
+    "description": "COLID OS自带的帮助手册，在NS版本中为用户提供使用帮助",
+    "ps": "NS特制版，针对NS进行了优化和调整",
+    "dates": "2026-08-10"
+  }
 ]
