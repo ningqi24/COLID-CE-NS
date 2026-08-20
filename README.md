@@ -1,4 +1,4 @@
-# NS 使用协议
+# COLID-CE-Ningqi-Snapshot（NS） 使用协议
 
 **版本：1.0**  
 **生效日期：2026年8月7日**  
