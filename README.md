@@ -1,7 +1,7 @@
 # COLID-CE-Ningqi-Snapshot（NS） 使用协议
 
-**版本：1.0**  
-**生效日期：2026年8月7日**  
+**版本：1.1**  
+**生效日期：2025年8月15日**  
 
 感谢您选择使用 **NS**（以下简称“本作品”）。本作品是基于 **COLID OS** 的 UI 与部分逻辑，使用 **TurboWarp** 图形化编程制作的二次创作版本。在使用本作品前，请您仔细阅读并同意本协议的全部条款。若您不同意任何条款，请勿安装或使用本作品。
 
@@ -73,6 +73,7 @@
 
 3. **联系方式**  
    - COLID 官网：[https://colid.mysxl.cn](https://colid.mysxl.cn)  
+   - COLID-NS官网：[https://colidns.mysxl.cn](https://colidns.mysxl.cn)
    - 官方 QQ 群：996349521  
    - Bilibili 空间：[https://space.bilibili.com/1825564224](https://space.bilibili.com/1825564224)  
    - GitHub 仓库：[https://github.com/ningqi24/COLID-CE-NS/](https://github.com/ningqi24/COLID-CE-NS/)
