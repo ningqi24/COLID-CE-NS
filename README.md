@@ -74,7 +74,9 @@
 3. **联系方式**  
    - COLID 官网：[https://colid.mysxl.cn](https://colid.mysxl.cn)  
    - COLID-NS官网：[https://colidns.mysxl.cn](https://colidns.mysxl.cn)
-   - 官方 QQ 群：996349521  
+   - COLID-EG官网：[https://colid-eg.mysxl.cn](https://colid-eg.mysxl.cn)
+   - 官方 QQ 群：996349521
+   - 官方 QQ频道：pd41344914  
    - Bilibili 空间：[https://space.bilibili.com/1825564224](https://space.bilibili.com/1825564224)  
    - GitHub 仓库：[https://github.com/ningqi24/COLID-CE-NS/](https://github.com/ningqi24/COLID-CE-NS/)
 
